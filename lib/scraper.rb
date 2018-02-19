@@ -40,4 +40,6 @@ class Scraper
       course.schedule = post.css(".date").text
       course.description = post.css("p").text
   end
+
+  Scraper.new.print_courses
 end
